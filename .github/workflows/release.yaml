@@ -56,7 +56,7 @@ jobs:
           zip packagist_${{ matrix.suffix }}.zip packagist_${{ matrix.suffix }}.exe
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: packagist_${{ matrix.suffix }}
           path: packagist_${{ matrix.suffix }}.*
